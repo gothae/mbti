@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="koxogml">
+    <meta name="keywords" content="십이간지 연애유형">
+    <meta name="description" content="mbti">
+
+    <!-- sns share -->
+    <meta property="og:url" content="https://koxogml-mbti.netlify.app/"/>
+    <meta property="og:titkle" content="십이간지 연애유형"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="./img/share.png"/>
+    <meta property="og:description" content="십이간지 연애유형"/>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="./img/favicon.ico">
+
+    <title>십이간지 연애유형</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/dafault.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -13,6 +28,11 @@
     <link rel="stylesheet" href="./css/qna.css">
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/result.css">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        Kakao.init('e2bd47cd68a0b0503aaaa2ee4626add3');
+        Kakao.isInitialized();
+    </script>
 
 </head>
 <body>
@@ -55,12 +75,13 @@
             <div class="resultDesc">
 
             </div>
-            <button type="button" class="kakao mt-3 py-2 px-2">공유하기</button>
+            <button type="button" class="kakao mt-3 py-2 px-2" onclick="js:kakaoshare()">공유하기</button>
     
         </section>
 
         <script src="./js/data.js"></script>
         <script src="./js/start.js"></script>
+        <script src="./js/share.js"></script>
     </div>
 </body>
 </html>
